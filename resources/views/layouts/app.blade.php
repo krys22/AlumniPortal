@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>AlumniPortal</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-
     <!-- Bootstrap 3.3.7 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css">
@@ -32,12 +31,10 @@
     <div class="wrapper">
         <!-- Main Header -->
         <header class="main-header">
-
             <!-- Logo -->
             <a href="#" class="logo">
                 <b>AlumniPortal</b>
             </a>
-
             <!-- Header Navbar -->
             <nav class="navbar navbar-static-top" role="navigation">
                 <!-- Sidebar toggle button-->
