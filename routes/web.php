@@ -20,6 +20,11 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::resource('users', 'UserController');
 
-Route::get('/chat','ChatController@index')->name('chats.index');
+
+Route::group(['middleware'=>'auth'], function (){
+
+    Route::resource('users', 'UserController');
+
+    Route::get('/chat','ChatController@index')->name('chats.index');
+});
