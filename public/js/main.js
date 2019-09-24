@@ -86,7 +86,7 @@ $(document).ready(function() {
 		);
 	});
 	jQuery('.nav > li > a, #logo a').click(function(e) {
-		e.preventDefault();
+	//	e.preventDefault();
 
 		jQuery.scrollTo(jQuery(this).attr('href'), 400, {
 			offset:-(jQuery('#header #menu').height()), axis:'y'

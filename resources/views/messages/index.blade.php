@@ -2,7 +2,7 @@
 
 @section('content')
     <section class="content-header">
-        <h1 class="pull-left">Group Chat of {{Auth::user()->department}} {{Auth::user()->year_of_graduation}}</h1>
+        <h1 class="pull-left">Messages</h1>
 
     </section>
     <div class="content">
@@ -11,8 +11,8 @@
         @include('flash::message')
         <div class="clearfix"></div>
         <div class="box box-primary">
-            <div class="box-body">
-                @include('chats.messages')
+            <div class="box-body" >
+                @include('messages.messages')
             </div>
         </div>
         <div class="text-center">
