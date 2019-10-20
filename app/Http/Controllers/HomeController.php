@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Message;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $admin_messages = Message::where('sender_id', 3)->latest()->paginate(15);
+        return view('home', compact('admin_messages'));
     }
 }

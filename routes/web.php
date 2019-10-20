@@ -31,4 +31,10 @@ Route::group(['middleware'=>'auth'], function (){
     Route::get('/messages','MessageController@index')->name('messages.index');
 
     Route::post('/send_message','MessageController@send_message')->name('send.message');
+
+    Route::get('/documents','DocumentController@index')->name('documents.index');
+
+    Route::post('/documents/store','DocumentController@store')->name('documents.store');
+
+    Route::post('/documents/store','DocumentController@storeSingle')->name('documents.store.single');
 });

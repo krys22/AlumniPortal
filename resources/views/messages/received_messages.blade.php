@@ -7,7 +7,7 @@
             <p>
                 {{$received_message->text}}<br>
                 <strong> Sent By</strong>. <a href="#">
-                    {{$received_message->Receiver->name}}</a></p>
+                    {{$received_message->sender->name}}</a></p>
         </div>
     </div>
 
